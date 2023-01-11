@@ -1,17 +1,17 @@
-# Урок 10. Структура приложения с пользовательским интерфейсом и базой данных (паттерн Repository)
+# РЈСЂРѕРє 10. РЎС‚СЂСѓРєС‚СѓСЂР° РїСЂРёР»РѕР¶РµРЅРёСЏ СЃ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРј РёРЅС‚РµСЂС„РµР№СЃРѕРј Рё Р±Р°Р·РѕР№ РґР°РЅРЅС‹С… (РїР°С‚С‚РµСЂРЅ Repository)
 
-## Задания: 
+## Р—Р°РґР°РЅРёСЏ: 
 
-1. Добавить контроллеры `PetController` и `ConsultationController` по образу и подобию контроллера `ClientController`
+1. Р”РѕР±Р°РІРёС‚СЊ РєРѕРЅС‚СЂРѕР»Р»РµСЂС‹ `PetController` Рё `ConsultationController` РїРѕ РѕР±СЂР°Р·Сѓ Рё РїРѕРґРѕР±РёСЋ РєРѕРЅС‚СЂРѕР»Р»РµСЂР° `ClientController`
 
-2. Добавить имплементацию для репозиториев PetRepository и ConsultationRepository
+2. Р”РѕР±Р°РІРёС‚СЊ РёРјРїР»РµРјРµРЅС‚Р°С†РёСЋ РґР»СЏ СЂРµРїРѕР·РёС‚РѕСЂРёРµРІ PetRepository Рё ConsultationRepository
 
 
 
-В классе WeatherForecastModel метод Delete реализован в следующем виде:
+Р’ РєР»Р°СЃСЃРµ WeatherForecastModel РјРµС‚РѕРґ Delete СЂРµР°Р»РёР·РѕРІР°РЅ РІ СЃР»РµРґСѓСЋС‰РµРј РІРёРґРµ:
 
 [WeatherForecastModel](https://github.com/MikhailAkulov/Architecture_home_work_9/blob/main/MyFirstWebApplication/MyFirstWebApplication/Models/WeatherForecastModel.cs)
 
-В классе WeatherForecastController:
+Р’ РєР»Р°СЃСЃРµ WeatherForecastController:
 
 [WeatherForecastController](https://github.com/MikhailAkulov/Architecture_home_work_9/blob/main/MyFirstWebApplication/MyFirstWebApplication/Controllers/WeatherForecastController.cs)
