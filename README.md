@@ -2,9 +2,9 @@
 
 ## Задания: 
 
-	1. Добавить контроллеры `PetController` и `ConsultationController` по образу и подобию контроллера `ClientController`
+1. Добавить контроллеры `PetController` и `ConsultationController` по образу и подобию контроллера `ClientController`
 
-	2. Добавить имплементацию для репозиториев `PetRepository` и `ConsultationRepository`
+2. Добавить имплементацию для репозиториев `PetRepository` и `ConsultationRepository`
 
 Реализация:
 
