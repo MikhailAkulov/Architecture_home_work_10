@@ -2,16 +2,26 @@
 
 ## Задания: 
 
-1. Добавить контроллеры `PetController` и `ConsultationController` по образу и подобию контроллера `ClientController`
+	1. Добавить контроллеры `PetController` и `ConsultationController` по образу и подобию контроллера `ClientController`
 
-2. Добавить имплементацию для репозиториев PetRepository и ConsultationRepository
+	2. Добавить имплементацию для репозиториев `PetRepository` и `ConsultationRepository`
 
+Реализация:
 
+[PetController](https://github.com/MikhailAkulov/Architecture_home_work_10/blob/main/ClinicService/ClinicService/Controllers/PetController.cs)
 
-В классе WeatherForecastModel метод Delete реализован в следующем виде:
+[ConsultationController](https://github.com/MikhailAkulov/Architecture_home_work_10/blob/main/ClinicService/ClinicService/Controllers/ConsultationController.cs)
 
-[WeatherForecastModel](https://github.com/MikhailAkulov/Architecture_home_work_9/blob/main/MyFirstWebApplication/MyFirstWebApplication/Models/WeatherForecastModel.cs)
+[PetRepository](https://github.com/MikhailAkulov/Architecture_home_work_10/blob/main/ClinicService/ClinicService/Services/Impl/PetRepository.cs)
 
-В классе WeatherForecastController:
+[ConsultationRepository](https://github.com/MikhailAkulov/Architecture_home_work_10/blob/main/ClinicService/ClinicService/Services/Impl/ConsultationRepository.cs)
 
-[WeatherForecastController](https://github.com/MikhailAkulov/Architecture_home_work_9/blob/main/MyFirstWebApplication/MyFirstWebApplication/Controllers/WeatherForecastController.cs)
+Requests:
+
+[CreatePetRequest](https://github.com/MikhailAkulov/Architecture_home_work_10/blob/main/ClinicService/ClinicService/Models/Requests/CreatePetRequest.cs)
+
+[CreateConsultationRequest](https://github.com/MikhailAkulov/Architecture_home_work_10/blob/main/ClinicService/ClinicService/Models/Requests/CreateConsultationRequest.cs)
+
+[UpdatePetRequest](https://github.com/MikhailAkulov/Architecture_home_work_10/blob/main/ClinicService/ClinicService/Models/Requests/UpdatePetRequest.cs)
+
+[UpdateConsultationRequest](https://github.com/MikhailAkulov/Architecture_home_work_10/blob/main/ClinicService/ClinicService/Models/Requests/UpdateConsultationRequest.cs)
