@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Akulo\\Desktop\\Geek_Brains\\1_Quarter\\014 Architecture\\Architecture_home_work_10\\ClinicService\\ClinicService\\ClinicService.csproj": {}
+    "C:\\Users\\Akuloff\\Desktop\\Geek_Brains\\1_Quarter\\014 Architecture\\Architecture_home_work_10\\ClinicService\\ClinicService\\ClinicService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Akulo\\Desktop\\Geek_Brains\\1_Quarter\\014 Architecture\\Architecture_home_work_10\\ClinicService\\ClinicService\\ClinicService.csproj": {
+    "C:\\Users\\Akuloff\\Desktop\\Geek_Brains\\1_Quarter\\014 Architecture\\Architecture_home_work_10\\ClinicService\\ClinicService\\ClinicService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Akulo\\Desktop\\Geek_Brains\\1_Quarter\\014 Architecture\\Architecture_home_work_10\\ClinicService\\ClinicService\\ClinicService.csproj",
+        "projectUniqueName": "C:\\Users\\Akuloff\\Desktop\\Geek_Brains\\1_Quarter\\014 Architecture\\Architecture_home_work_10\\ClinicService\\ClinicService\\ClinicService.csproj",
         "projectName": "ClinicService",
-        "projectPath": "C:\\Users\\Akulo\\Desktop\\Geek_Brains\\1_Quarter\\014 Architecture\\Architecture_home_work_10\\ClinicService\\ClinicService\\ClinicService.csproj",
-        "packagesPath": "C:\\Users\\Akulo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Akulo\\Desktop\\Geek_Brains\\1_Quarter\\014 Architecture\\Architecture_home_work_10\\ClinicService\\ClinicService\\obj\\",
+        "projectPath": "C:\\Users\\Akuloff\\Desktop\\Geek_Brains\\1_Quarter\\014 Architecture\\Architecture_home_work_10\\ClinicService\\ClinicService\\ClinicService.csproj",
+        "packagesPath": "C:\\Users\\Akuloff\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Akuloff\\Desktop\\Geek_Brains\\1_Quarter\\014 Architecture\\Architecture_home_work_10\\ClinicService\\ClinicService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Akulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Akuloff\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

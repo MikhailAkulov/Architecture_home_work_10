@@ -21,30 +21,30 @@ namespace ClinicService.Controllers
         }
 
         [HttpPost("create")]
-        public ActionResult<int> Create([FromBody] CreateClientRequest createClientRequest)
+        public ActionResult<int> Create([FromBody] CreateClientRequest createRequest)
         {
             int res = _clientRepository.Create(new Client
             {
-                Document = createClientRequest.Document,
-                SurName = createClientRequest.SurName,
-                FirstName = createClientRequest.FirstName,
-                Patronymic = createClientRequest.Patronymic,
-                Birthday = createClientRequest.Birthday,
+                Document = createRequest.Document,
+                SurName = createRequest.SurName,
+                FirstName = createRequest.FirstName,
+                Patronymic = createRequest.Patronymic,
+                Birthday = createRequest.Birthday,
             });
             return Ok(res);
         }
 
         [HttpPut("update")]
-        public ActionResult<int> Update([FromBody] UpdateClientRequest updateClientRequest)
+        public ActionResult<int> Update([FromBody] UpdateClientRequest updateRequest)
         {
             int res = _clientRepository.Update(new Client
             {
-                ClientId = updateClientRequest.ClientId,
-                Document = updateClientRequest.Document,
-                SurName = updateClientRequest.SurName,
-                FirstName = updateClientRequest.FirstName,
-                Patronymic = updateClientRequest.Patronymic,
-                Birthday = updateClientRequest.Birthday,
+                ClientId = updateRequest.ClientId,
+                Document = updateRequest.Document,
+                SurName = updateRequest.SurName,
+                FirstName = updateRequest.FirstName,
+                Patronymic = updateRequest.Patronymic,
+                Birthday = updateRequest.Birthday,
             });
             return Ok(res);
         }

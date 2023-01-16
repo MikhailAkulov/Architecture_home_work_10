@@ -3,9 +3,6 @@ using System.Data.SQLite;
 
 namespace ClinicService.Services.Impl
 {
-    /// <summary>
-    /// ДОМАШНЯЯ РАБОТА Добавить имплементацию для текущего репозитория
-    /// </summary>
     public class PetRepository : IPetRepository
     {
         private const string connectionString = "Data Source = clinic.db; Version = 3; Pooling = true; Max Pool Size = 100;";
@@ -15,7 +12,7 @@ namespace ClinicService.Services.Impl
             SQLiteConnection connection = new SQLiteConnection(connectionString);
             connection.Open();
             SQLiteCommand command = new SQLiteCommand(connection);
-            command.CommandText = "INSERT INTO Pets(ClientId, Name, Birthday) VALUES(@CientId, @Name, @Birthday)";
+            command.CommandText = "INSERT INTO Pets(ClientId, Name, Birthday) VALUES(@ClientId, @Name, @Birthday)";
             command.Parameters.AddWithValue("@ClientId", item.ClientId);
             command.Parameters.AddWithValue("@Name", item.Name);
             command.Parameters.AddWithValue("@Birthday", item.Birthday.Ticks);
@@ -29,7 +26,7 @@ namespace ClinicService.Services.Impl
             SQLiteConnection connection = new SQLiteConnection(connectionString);
             connection.Open();
             SQLiteCommand command = new SQLiteCommand(connection);
-            command.CommandText = "UPDATE pets SET ClientId = @CientId, Name = @Name, Birthday = @Birthday WHERE PetId = @PetId";
+            command.CommandText = "UPDATE pets SET ClientId = @ClientId, Name = @Name, Birthday = @Birthday WHERE PetId = @PetId";
             command.Parameters.AddWithValue("@PetId", item.PetId);
             command.Parameters.AddWithValue("@ClientId", item.ClientId);
             command.Parameters.AddWithValue("@Name", item.Name);
