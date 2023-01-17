@@ -18,28 +18,28 @@ namespace ClinicService.Controllers
         }
 
         [HttpPost("create")]
-        public ActionResult<int> Create([FromBody] CreateConsultationRequest createConsultationRequest)
+        public ActionResult<int> Create([FromBody] CreateConsultationRequest createRequest)
         {
             int res = _consultationRepository.Create(new Consultation
             {
-                ClientId = createConsultationRequest.ClientId,
-                PetId = createConsultationRequest.PetId,
-                ConsultationDate = createConsultationRequest.ConsultationDate,
-                Description = createConsultationRequest.Description,
+                ClientId = createRequest.ClientId,
+                PetId = createRequest.PetId,
+                ConsultationDate = createRequest.ConsultationDate,
+                Description = createRequest.Description,
             });
             return Ok(res);
         }
 
         [HttpPut("update")]
-        public ActionResult<int> Update([FromBody] UpdateConsultationRequest updateConsultationRequest)
+        public ActionResult<int> Update([FromBody] UpdateConsultationRequest updateRequest)
         {
             int res = _consultationRepository.Update(new Consultation
             {
-                ConsultationId = updateConsultationRequest.ConsultationId,
-                ClientId = updateConsultationRequest.ClientId,
-                PetId = updateConsultationRequest.PetId,
-                ConsultationDate = updateConsultationRequest.ConsultationDate,
-                Description = updateConsultationRequest.Description,
+                ConsultationId = updateRequest.ConsultationId,
+                ClientId = updateRequest.ClientId,
+                PetId = updateRequest.PetId,
+                ConsultationDate = updateRequest.ConsultationDate,
+                Description = updateRequest.Description,
             });
             return Ok(res);
         }

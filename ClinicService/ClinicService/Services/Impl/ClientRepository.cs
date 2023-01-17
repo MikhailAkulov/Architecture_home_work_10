@@ -1,5 +1,4 @@
 ﻿using ClinicService.Models;
-using System.Data;
 using System.Data.SQLite;
 
 namespace ClinicService.Services.Impl

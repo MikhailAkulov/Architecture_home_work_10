@@ -17,26 +17,26 @@ namespace ClinicService.Controllers
         }
 
         [HttpPost("create")]
-        public ActionResult<int> Create([FromBody] CreatePetRequest createPetRequest)
+        public ActionResult<int> Create([FromBody] CreatePetRequest createRequest)
         {
             int res = _petRepository.Create(new Pet
             {
-                ClientId = createPetRequest.ClientId,
-                Name = createPetRequest.Name,
-                Birthday = createPetRequest.Birthday,
+                ClientId = createRequest.ClientId,
+                Name = createRequest.Name,
+                Birthday = createRequest.Birthday,
             });
             return Ok(res);
         }
 
         [HttpPut("update")]
-        public ActionResult<int> Update([FromBody] UpdatePetRequest updatePetRequest)
+        public ActionResult<int> Update([FromBody] UpdatePetRequest updateRequest)
         {
             int res = _petRepository.Update(new Pet
             {
-                PetId = updatePetRequest.PetId,
-                ClientId = updatePetRequest.ClientId,
-                Name = updatePetRequest.Name,
-                Birthday = updatePetRequest.Birthday,
+                PetId = updateRequest.PetId,
+                ClientId = updateRequest.ClientId,
+                Name = updateRequest.Name,
+                Birthday = updateRequest.Birthday,
             });
             return Ok(res);
         }

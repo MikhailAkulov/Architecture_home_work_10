@@ -1,12 +1,8 @@
 ﻿using ClinicService.Models;
-using System.Collections.Generic;
 using System.Data.SQLite;
 
 namespace ClinicService.Services.Impl
 {
-    /// <summary>
-    /// ДОМАШНЯЯ РАБОТА Добавить имплементацию для текущего репозитория
-    /// </summary>
     public class ConsultationRepository : IConsultationRepository
     {
         private const string connectionString = "Data Source = clinic.db; Version = 3; Pooling = true; Max Pool Size = 100;";
@@ -16,7 +12,7 @@ namespace ClinicService.Services.Impl
             SQLiteConnection connection = new SQLiteConnection(connectionString);
             connection.Open();
             SQLiteCommand command = new SQLiteCommand(connection);
-            command.CommandText = "INSERT INTO Consultations(ClientId, PetId, ConsultationDate, Description) VALUES(@CientId, @PetId, @ConsultationDate, @Description)";
+            command.CommandText = "INSERT INTO Consultations(ClientId, PetId, ConsultationDate, Description) VALUES(@ClientId, @PetId, @ConsultationDate, @Description)";
             command.Parameters.AddWithValue("@ClientId", item.ClientId);
             command.Parameters.AddWithValue("@PetId", item.PetId);
             command.Parameters.AddWithValue("@ConsultationDate", item.ConsultationDate.Ticks);
@@ -32,7 +28,7 @@ namespace ClinicService.Services.Impl
             SQLiteConnection connection = new SQLiteConnection(connectionString);
             connection.Open();
             SQLiteCommand command = new SQLiteCommand(connection);
-            command.CommandText = "UPDATE consultations SET ClientId = @CientId, PetId = @PetId, ConsultationDate = @ConsultationDate, Description = @Description WHERE ConsultationId = @ConsultationId";
+            command.CommandText = "UPDATE consultations SET ClientId = @ClientId, PetId = @PetId, ConsultationDate = @ConsultationDate, Description = @Description WHERE ConsultationId = @ConsultationId";
             command.Parameters.AddWithValue("@ConsultationId", item.ConsultationId);
             command.Parameters.AddWithValue("@ClientId", item.ClientId);
             command.Parameters.AddWithValue("@PetId", item.PetId);
